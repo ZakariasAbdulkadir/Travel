@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="css/styles.css">
 
     <i class="fa fa-link" aria-hidden="true"></i>
@@ -35,10 +37,10 @@
 
     <!-- Main -->
     <main class="main">
-        <div>
-            <div>
+        <div class="swiper-container gallery-top"></div>
+            <div class="swiper-wrapper">
                 <!-- Island 1 -->
-                <section class="islands">
+                <section class="islands swiper-slide">
                     <img src="img/bora.jpg" alt="" class="islands__bg">
                     
                     <div class="islands__container bd-container">
@@ -58,7 +60,7 @@
                 </section>
 
                 <!-- Island 2 -->
-                <section class="islands">
+                <section class="islands swiper-slide">
                     <img src="img/fiji.jpg" alt="" class="islands__bg">
                     
                     <div class="islands__container bd-container">
@@ -78,7 +80,7 @@
                 </section>
 
                 <!-- Island 3 -->
-                <section class="islands">
+                <section class="islands swiper-slide">
                     <img src="img/hawaii.jpg" alt="" class="islands__bg">
                     
                     <div class="islands__container bd-container">
@@ -96,18 +98,36 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- Islands Popup -->
+
+                <div class="islands__popup" id="popup">
+                    <div>
+                        <div class="islands__popup-close" id="popup-close">
+                            <i class='bx bx-x' ></i>
+                        </div>
+
+                        <iframe class="islands__popup-video" src="https://www.youtube.com/embed/SvoOgelr1eY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Controls -->
-        <div class="controls">
+        
 
+        <!-- Controls -->
+        <div class="controls gallery-thumbs">
+            <div class="controls__container swiper-wrapper">
+                <img src="img/hawaii.jpg" alt="" class="controls__img swiper-slide">
+                <img src="img/fiji.jpg" alt="" class="controls__img swiper-slide">
+                <img src="img/bora.jpg" alt="" class="controls__img swiper-slide">
+            </div>
         </div>
     </main>
 
-    <!-- GSAP -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
-    <!-- Swiper JS -->
+
 
     <script src="js/main.js"></script>
 </body>
